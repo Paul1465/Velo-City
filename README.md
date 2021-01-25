@@ -1,6 +1,6 @@
 # Vélo City
 
-## App of bike reservaton with mapBox API
+## App of bike reservaton with mapBox API - Single Page
 
 
 ### System Requirements
