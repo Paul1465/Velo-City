@@ -5,7 +5,7 @@
 
 ### System Requirements
 
-PHP => localhost
+PHP => wampServer
 
 ## Project setup
 ```
