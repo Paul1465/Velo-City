@@ -1,0 +1,116 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ body {
+    overflow-x: hidden;
+  }
+  
+
+a.list-group-item.list-group-item-action.bg-light{
+  line-height: 122px;
+  border: none;
+ 
+}
+a.list-group-item.list-group-item-action.bg-light:hover{
+  background-color: #00d1b2 !important;
+  color:white;
+  
+}
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+
+  #wrapper{
+    visibility: hidden;
+  }
+
+
+
+img.picUsers {
+  display:block;
+  margin-left: 24px;
+  width: 48px;
+  
+  height:48px;
+   border-radius: 50%;
+   overflow: hidden;
+   
+  }
+  /*div#sidebar-wrapper.bg-DeviceLightEvent.border-right{
+    display: none !important;
+  }
+  nav.navbar-expand-lg.navbar-DeviceLightEvent.bg-DeviceLightEvent.border-bottom{
+    display: none !important;
+  }*/
+hr
+{  border-bottom: 2px solid black;
+  border-top: 0px white !important;
+  padding-right: 240px !important;
+  margin-bottom: 80px;
+  margin-top: -50px;
+ 
+  height:45; 
+ }
+ span#idUser{
+   margin-top: -49px ;
+   margin-left: 95px;
+   font-size: 19px;
+ }
+ span#creditUser{
+   margin-left: 95px;
+   font-size: 19px;
+   margin-bottom: 80px;
+ }
+ i.fas.fa-bicycle{
+  margin-top: 70px;
+  font-size: 38px;
+  margin-left: 175px;
+}
+div.list-group.list-group-flush{
+border-left: none;
+border-top: none;
+}
+
+div.groove 
+{border-style: groove;}

@@ -1,0 +1,38 @@
+@media (max-width: 362px) {
+    h1:first-child {
+        
+    margin-left : 80px !important;
+  }
+  }
+@media (min-width: 434px) {
+    h1:first-child {
+        
+    margin-left : 180px !important;
+  }
+  }
+@media (min-width: 766px) {
+    h1:first-child {
+        
+    margin-left : 480px !important;
+  }
+  }
+@media (min-width: 992px) {
+    h1:first-child {
+        
+    margin-left : 700px !important;
+  }
+  }
+@media (min-width: 1196px) {
+    h1:first-child {
+        
+    margin-left : 900px !important;
+  }
+  }
+@media (max-width: 1022px) {
+    div.col-7.text-left {
+        margin-left: 0px !important;
+        position: absolute;
+        
+    
+  }
+  }

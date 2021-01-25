@@ -1,0 +1,23 @@
+{
+  "name": "projet",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp-compress": "0.0.9",
+    "gulp-uglify-es": "^1.0.4",
+    "magnific-popup": "^1.1.0",
+    "pump": "^3.0.0"
+  }
+}

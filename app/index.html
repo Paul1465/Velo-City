@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- JQUERY -->
+    <script src="dist/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- POPPER.JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME-->
+    <script src="https://pagecdn.io/lib/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+    <link rel="stylesheet" href="dist/assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="crossorigin="" />
+</head>
+<body>
+    
+      <header>
+      <div id="loading"></div>
+      </header> 
+
+    <div class="container login-container">
+      <form id="formLogin" >
+      <div class="row">
+          <div class="col-md-6 login-form-1">
+              <h3>Connectez-vous</h3>
+              
+                  <div class="form-group">
+                      <input id="colorFond" type="text" name="username" class="form-control " placeholder="Your Username *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <input  type="password" name="password" class="form-control" placeholder="Your Password *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" name="submit" class="btnSubmit" value="Login" />
+                  </div>
+                  <div class="form-group">
+                      <a href="#" class="btnForgetPwd">Forget Password?</a>
+                  </div>
+                </form>
+          </div>
+          <div class="col-md-6 login-form-2">
+            <form id="formSignIn">
+              <div class="login-logo">
+                  <img src="dist/assets/img/log.png" alt=""/>
+              </div>
+              <h3 style="color:black">Enregistrement rapide</h3>
+                  <div class="form-group">
+                      <input type="text" name="username"  class="form-control" placeholder="Your Username *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <input type="password" name="password"  class="form-control" placeholder="Your Password *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <input style="background-color:black; color:white" type="submit" name="submit" class="btnSubmit" value="Sign In" />
+                  </div>
+                  <div class="form-group">
+
+                      <a href="#" class="btnForgetPwd" value="Login" style="color:black">Help?</a>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+      <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light " id="sidebar-wrapper">
+          <div class="sidebar-heading"> <img class="imgLogo"src="dist/assets/img/logoww.png "> 
+          
+        </div>
+          <div class="list-group list-group-flush groove">
+          <span id="veloIcone"><i class="fas fa-bicycle"></i></span>
+            <hr>
+          
+            <img class="picUsers"src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="">
+            <span id="idUser" class="font-weight-bold text-uppercase"></span>
+            <span id="creditUser"> Solde : 0 €</span>
+              
+            <a id="inputMap"href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-map-marked-alt mr-3"></i>Carte des stations</a>
+            <a id="inputHelp" href="#" class="btn list-group-item list-group-item-action bg-light"><i class="fas fa-question-circle mr-3"></i>Aide</a>
+            <a id="payment-form" href="#" class="list-group-item list-group-item-action bg-light subscribe"> <i class="fas fa-coins mr-3"></i>Ajouter du crédit</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-user-friends mr-3"></i>Inviter des amis </a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-tachometer-alt mr-3"></i>Mon barême</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light"> <i class="fa fa-book mr-3"></i>Réglement</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+    
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary button.navbar-toggler collapsed" id="menu-toggle">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        
+    
+          <section id="presentationSite" class="d-none">
+          <div class="jumbotron jumbotron-fluid">
+              <div class="container-fluid">
+                <div class="row">
+                <div class="col-12">
+                  
+                <h1  id="titreH1"class="display-4 text-white">Vélo City</h1>
+                <p class="lead"></p>
+              </div></div>
+              </div>
+            </div>
+
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 text-left">
+            
+            <h2>Depuis l'interface web d'administration : </h2>
+
+            <p>    - Créez et personnalisez votre application de présentation en autonomie </p> 
+            <p>    - Analysez les statistiques détaillées des retours terrain </p>
+            <p>    - Réalisez des enquêtes directement auprès de vos collaborateurs </p>
+            <p>    - Gérez des groupes d'utilisateurs et leurs accès aux dossiers </p>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col-7 text-left">
+                  
+            <h2 class="deplacementPetitTitre">    Depuis l'application mobile et tablette : </h2>
+                
+            <p>    - Recevez en temps réel les notifications issues du siège </p>
+            <p>    - Sélectionnez les documents pour les envoyer à un destinataire </p>
+            <p>    - Renseignez des informations pour les faire remonter au siège </p>
+            <p>    - Gardez une visibilité sur les derniers contenus téléchargés.</p>
+        </div>
+        </div>
+      </div>
+      </section>
+            <!-- MAP-->
+    <div  id="map" class="mt-4">
+                  
+      </div>    
+        <!-- /#page-content-wrapper -->
+    </div>
+        <!-- FOOTER LINKS-->
+        <footer>
+        <!-- Bootstrap core JavaScript -->
+
+  <script src="dist/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script>
+            $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+            });
+          </script>
+            <script src="src/assets/js/loading.js"></script>
+            <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="crossorigin=""></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+            <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script> 
+            <script src="dist/assets/js/app.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+        </footer>
+        
+  
+</body>
+</html>

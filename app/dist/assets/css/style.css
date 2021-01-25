@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Viga');
+
+.btn-primary {
+  border: #00d1b2;
+  background-color: #00d1b2;
+}
+
+.btn-primary:hover {
+  color: #00d1b2;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Viga', sans-serif;
+}
+
+#loading {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(244, 244, 244, .99);
+  background-image: url('../img/loading1.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 362px) {
+  h1:first-child {
+    margin-left: 80px !important;
+  }
+}
+
+@media (min-width: 434px) {
+  h1:first-child {
+    margin-left: 180px !important;
+  }
+}
+
+@media (min-width: 766px) {
+  h1:first-child {
+    margin-left: 480px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  h1:first-child {
+    margin-left: 700px !important;
+  }
+}
+
+@media (min-width: 1196px) {
+  h1:first-child {
+    margin-left: 900px !important;
+  }
+}
+
+@media (max-width: 1022px) {
+  div.col-7.text-left {
+    position: absolute;
+    margin-left: 0 !important;
+  }
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#marker {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-image: url('../img/icone_velo.png');
+  background-size: cover;
+}
+
+#map {
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  width: 100% !important;
+  height: 1200px;
+  margin-top: 100px !important;
+}
+
+.mapboxgl-popup {
+  top: auto;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+/*@media (min-width: 768px) {
+  nav#sidebar.sidebar-wrapper {
+    margin-right : 160px!important;
+  }
+  }*/
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+}
+
+a.list-group-item.list-group-item-action.bg-light {
+  line-height: 122px;
+  border: none;
+}
+
+a.list-group-item.list-group-item-action.bg-light:hover {
+  color: white;
+  background-color: #00d1b2 !important;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  font-size: 1.2rem;
+  padding: .875rem 1.25rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#wrapper {
+  visibility: hidden;
+}
+
+img.picUsers {
+  display: block;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  margin-left: 24px;
+  border-radius: 50%;
+}
+
+/*div#sidebar-wrapper.bg-DeviceLightEvent.border-right{
+    display: none !important;
+  }
+  nav.navbar-expand-lg.navbar-DeviceLightEvent.bg-DeviceLightEvent.border-bottom{
+    display: none !important;
+  }*/
+hr {
+  height: 45;
+  margin-top: -50px;
+  margin-bottom: 80px;
+  padding-right: 240px !important;
+  border-top: 0 white !important;
+  border-bottom: 2px solid black;
+}
+
+span#idUser {
+  font-size: 19px;
+  margin-top: -49px;
+  margin-left: 95px;
+}
+
+span#creditUser {
+  font-size: 19px;
+  margin-bottom: 80px;
+  margin-left: 95px;
+}
+
+i.fas.fa-bicycle {
+  font-size: 38px;
+  margin-top: 70px;
+  margin-left: 175px;
+}
+
+div.list-group.list-group-flush {
+  border-top: none;
+  border-left: none;
+}
+
+div.groove {
+  border-style: groove;
+}
+
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-logo {
+  position: relative;
+  margin-left: -41.5%;
+}
+
+.login-logo img {
+  position: absolute;
+  width: 20%;
+  margin-top: 19%;
+  padding: 5%;
+  border-radius: 4.5rem;
+  background: #282726;
+}
+
+.login-form-1 {
+  padding: 9%;
+  background: #282726;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 9px 26px 0 rgba(0, 0, 0, .19);
+}
+
+.login-form-1 h3 {
+  margin-bottom: 12%;
+  text-align: center;
+  color: #fff;
+}
+
+.login-form-2 {
+  padding: 9%;
+  background: white;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 9px 26px 0 rgba(0, 0, 0, .19);
+}
+
+.login-form-2 h3 {
+  margin-bottom: 12%;
+  text-align: center;
+  color: #fff;
+}
+
+.btnSubmit {
+  font-weight: 600;
+  width: 50%;
+  padding: 2%;
+  color: #282726;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+}
+
+.btnForgetPwd {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btnForgetPwd:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #a9a9a9 !important;
+}
+
+form input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #a9a9a9 !important;
+}
+
+div.sidebar-heading {
+  padding-top: 50px;
+  color: white;
+  background-color: black !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom {
+  color: white !important;
+  background-color: black !important;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse {
+  color: white !important;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle {
+  color: white;
+}
+
+a.nav-link {
+  color: white !important;
+}
+
+h1:first-child {
+  margin-left: 111px;
+}
+
+.imgLogo {
+  width: 100px;
+  height: 130px;
+  margin-left: 51px;
+}
+
+.imgVelo {
+  height: 350px;
+  margin-top: 21px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 570px;
+  margin-top: 100px;
+  padding-bottom: 14%;
+  background-image: url('../img/photo_velo.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2.deplacementPetitTitre {
+  margin-top: 50px;
+}
+
+section#presentationSite {
+  margin-left: 70px;
+}
+
+div.col-7.text-left {
+  margin-left: 50%;
+}
